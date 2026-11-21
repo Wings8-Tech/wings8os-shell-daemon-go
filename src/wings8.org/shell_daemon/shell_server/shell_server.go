@@ -6,13 +6,13 @@ import (
     "runtime"
     "strings"
 
-    te "jemaos.com/shell_daemon/shell_server/task_executor"
+    te "wings8.org/shell_daemon/shell_server/task_executor"
     "github.com/godbus/dbus/v5"
 )
 
 // Define the D-Bus path and interface constants
-var DbusPath = dbus.ObjectPath("/io/jemaos/ShellDaemon")
-const DbusIface = "io.jemaos.ShellInterface"
+var DbusPath = dbus.ObjectPath("/io/wings8os/ShellDaemon")
+const DbusIface = "io.wings8os.ShellInterface"
 const ShellCommand = 1
 
 // Debug related begin
