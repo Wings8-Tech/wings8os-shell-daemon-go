@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright 2026 Jema Technology.
+# Copyright 2026 Wings8 Technology.
 # Active / desactive le Turbo Boost du processeur (intel_pstate + cpufreq
 # boost generique), avec persistance de l etat (re-applique au demarrage).
 #
@@ -7,7 +7,7 @@
 
 set -u
 
-STATE_DIR="/var/lib/jemaos"
+STATE_DIR="/var/lib/wings8os"
 STATE_FILE="${STATE_DIR}/cpu_turbo.state"
 PSTATE_NODE="/sys/devices/system/cpu/intel_pstate/no_turbo"
 BOOST_NODE="/sys/devices/system/cpu/cpufreq/boost"

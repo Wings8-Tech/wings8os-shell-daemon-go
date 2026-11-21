@@ -6,9 +6,9 @@
 ## Dbus information:
 
 Bus Type: system
-Bus Destination: io.jemaos.ShellDaemon
-Bus Path: `/io/jemaos/ShellDaemon`
-Bus Interface: io.jemaos.ShellInterface
+Bus Destination: io.wings8os.ShellDaemon
+Bus Path: `/io/wings8os/ShellDaemon`
+Bus Interface: io.wings8os.ShellInterface
 
 ## Dbus motheds:
 

@@ -14,9 +14,9 @@ emit_event() {
 
   # Send the event using dbus-send
   dbus-send --system --type=method_call \
-   --dest=io.jemaos.ShellDaemon \
-   /io/jemaos/ShellDaemon \
-   io.jemaos.ShellInterface.EmitNotification \
+   --dest=io.wings8os.ShellDaemon \
+   /io/wings8os/ShellDaemon \
+   io.wings8os.ShellInterface.EmitNotification \
    int32:$type \
    int32:$handler \
    int32:$state \

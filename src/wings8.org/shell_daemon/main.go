@@ -4,7 +4,7 @@ import (
     "fmt"
     "os"
 
-    "jemaos.com/shell_daemon/shell_server"
+    "wings8.org/shell_daemon/shell_server"
     "github.com/godbus/dbus/v5"
     "github.com/godbus/dbus/v5/introspect"
 )
@@ -12,7 +12,7 @@ import (
 // Define the introspection XML for the D-Bus interface
 const intro = `
 <node>
-    <interface name="io.jemaos.ShellInterface">
+    <interface name="io.wings8os.ShellInterface">
         <method name="SyncExec">
             <arg direction="in" type="s"/> <!-- Input: script as a string -->
             <arg direction="out" type="is"/> <!-- Output: integer and string -->
@@ -69,7 +69,7 @@ func main() {
         "org.freedesktop.DBus.Introspectable")
 
     // Request a unique name on the D-Bus
-    reply, err := conn.RequestName("io.jemaos.ShellDaemon", dbus.NameFlagDoNotQueue)
+    reply, err := conn.RequestName("io.wings8os.ShellDaemon", dbus.NameFlagDoNotQueue)
     if err != nil {
         panic(err) // Exit if the name request fails
     }

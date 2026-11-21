@@ -3,7 +3,7 @@
 [ $# -lt 3 ] && exit 1
 
 # Source the shell library for shared functions
-. /usr/share/jemaos_shell/shell_lib.sh
+. /usr/share/wings8os_shell/shell_lib.sh
 
 # Extract the data, extra data, and message from the arguments
 data=$1

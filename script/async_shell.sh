@@ -3,7 +3,7 @@
 [ $# -lt 2 ] && exit 1
 
 # Source the shell library for shared functions
-. /usr/share/jemaos_shell/shell_lib.sh
+. /usr/share/wings8os_shell/shell_lib.sh
 
 # Define constants for event codes
 ON_CLOSED=2  # Event code for a successful command execution
